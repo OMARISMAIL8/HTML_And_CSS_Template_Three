@@ -1,0 +1,120 @@
+/* Start Glopal Values */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:root {
+    --MainColor: #2196f3;
+    --MainColor-alt: #1787e0;
+    --MainTransation: 0.3s;
+}
+body {
+    font-family: "Cairo", sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (min-width:767px) {
+    .container {
+        width: 750px;
+    }
+}
+@media (min-width:992px) {
+    .container {
+        width: 970px;
+    }
+}
+@media (min-width:1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+/* Start Glopal Values */
+.header {
+    position: relative;
+    box-shadow: 0 0 10px #ddd;
+    background-color: white;
+}
+.header .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.header .container .logo {
+    color: var(--MainColor);
+    font-size: 25px;
+    font-weight: bold;
+    height: 72px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+@media (max-width:767px) {
+    .header .container .logo {
+        width: 100%;
+        height: 50px;
+    }
+}
+.header .container .main-nav {
+    display: flex;
+}
+@media (max-width:767px) {
+    .header .container .main-nav {
+        margin: auto;
+    }
+}
+.header .main-nav > li > a {
+    display: flex;
+    padding: 0 30px;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    height: 72px;
+    transition: var(--MainTransation);
+    position: relative;
+    transition: var(--MainTransation);
+    overflow: hidden;
+}
+@media (max-width:767px) {
+    .header .main-nav > li > a {
+        padding: 10px;
+        font-size: 14px;
+        height: 30px;
+    }
+}
+.header .main-nav > li > a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: var(--MainColor);
+    top: 0;
+    left: -100%;
+    transition: var(--MainTransation);
+}
+.header .main-nav > li > a:hover {
+    background-color: #fafafa;
+    color: var(--MainColor);
+    left: 0;
+}
+.header .main-nav > li > a:hover::before {
+    left: 0;
+}
+/* End Glopal Values */
